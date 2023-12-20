@@ -1,39 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./public/*.{html,js}"],
   theme: {
+    colors: {
+      principal: "#CC2D4A",
+      secondary: "#8FA206",
+      tertiary: "#61AEC9",
+    },
+    fontFamily: {
+      Montserrat: ["Montserrat", "sans-serif"],
+    },
     extend: {
       backgroundImage: {
-        sanFrancisco: "url('./public/assets/img/sanFrancisco.jpg')",
-        sanFranciscoDesktop:
-          "url('./public/assets/img/sanFranciscoDesktop.jpg')",
-        yosemite: "url('./public/assets/img/yosemite.jpg')",
-        LA: "url('./public/assets/img/LA.jpg')",
-        seattle: "url('./public/assets/img/seattle.jpg')",
-        new_york: "url('./public/assets/img/new_york.jpg')",
-        norway: "url('./public/assets/img/norway.jpg')",
-        sydney: "url('./public/assets/img/sydney.jpg')",
-        miami: "url('./public/assets/img/miami.jpg')",
-        switzerland: "url('./public/assets/img/switzerland.jpg')",
-        bali: "url('./public/assets/img/bali.jpg')",
-        norway: "url('./public/assets/img/norway.jpg')",
-        chicago: "url('./public/assets/img/chicago.jpg')",
-        europe: "url('./public/assets/img/europe.jpg')",
-        iceland: "url('./public/assets/img/iceland.jpg')",
-      },
-      backgroundColor: (theme) => ({
-        ...theme("colors"),
-        principal: "#CC2D4A",
-        secondary: "#8FA206",
-        tertiary: "#61AEC9",
-      }),
-      textColor: {
-        principal: "#CC2D4A",
-        secondary: "#8FA206",
-        tertiary: "#61AEC9",
-      },
-      fontFamily: {
-        Montserrat: ["Montserrat", "sans-serif"],
+        sanFrancisco: "url('../img/sanFrancisco.jpg')",
+        sanFranciscoDesktop: "url('../img/sanFranciscoDesktop.jpg')",
+        yosemite: "url('../img/yosemite.jpg')",
+        LA: "url('../img/LA.jpg')",
+        seattle: "url('../img/seattle.jpg')",
+        new_york: "url('../img/new_york.jpg')",
+        norway: "url('../img/norway.jpg')",
+        sydney: "url('../img/sydney.jpg')",
+        miami: "url('../img/miami.jpg')",
+        switzerland: "url('../img/switzerland.jpg')",
+        bali: "url('../img/bali.jpg')",
+        norway: "url('../img/norway.jpg')",
+        chicago: "url('../img/chicago.jpg')",
+        europe: "url('../img/europe.jpg')",
+        iceland: "url('../img/iceland.jpg')",
       },
     },
   },
