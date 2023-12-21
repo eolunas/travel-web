@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/tailwind.css" />
     <title>Travel web</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,91 @@
     />
   </head>
   <body>
-    <p>Hello world</p>
-    <div class="w-64 h-64 bg-principal"></div>
+    <header>
+      <nav></nav>
+      <div id="tabBar"></div>
+    </header>
+    <main>
+      <section class="w-full h-screen">
+        <div id="home">
+          <div class="w-full h-3/4">
+            <div
+              class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
+            >
+              <input
+                class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+                type="search"
+                placeholder="San Francisco"
+              />
+              <button
+                class="rounded-full bg-white text-xl text-principal font-semibold py-4 px-6 transition-all duration-500 ease-in-out hover:bg-principal hover:text-white transfrom hover:-translate-y-1 hover:scale(110)"
+              >
+                Explore more
+              </button>
+            </div>
+            <div class="w-full h-full">
+              <img src="./assets/img/sanFrancisco.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6" id="recommendations">
+          <p class="text-3xl font-semibold text-principal">
+            Our recomendations
+          </p>
+          <div
+            class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-auto flex space-x-4"
+          >
+            <div class="Card">
+              <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+              <div class="w-full h-2/5 bg-secondary rounded-b-lg px-2 py-2">
+                <p class="text-white text-xl font-bold">Norway</p>
+                <p class="text-white text-sm py-2">Beatiful landscape</p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="Card">
+              <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+              <div class="w-full h-2/5 bg-white rounded-b-lg px-2 py-2">
+                <p class="text-tertiary text-xl font-bold">New York</p>
+                <p class="text-tertiary text-sm py-2">Concrete jungle</p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="Card">
+              <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+              <div class="w-full h-2/5 bg-secondary rounded-b-lg px-2 py-2">
+                <p class="text-white text-xl font-bold">Yosemite</p>
+                <p class="text-white text-sm py-2">A break from the world</p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="Card">
+              <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+              <div class="w-full h-2/5 bg-white rounded-b-lg px-2 py-2">
+                <p class="text-tertiary text-xl font-bold">Seatle</p>
+                <p class="text-tertiary text-sm py-2">Big city</p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="Card">
+              <div
+                class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"
+              ></div>
+              <div class="w-full h-2/5 bg-secondary rounded-b-lg px-2 py-2">
+                <p class="text-white text-xl font-bold">Switzerland</p>
+                <p class="text-white text-sm py-2">Big landscape</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="featured_rentals"></div>
+      </section>
+    </main>
   </body>
 </html>
